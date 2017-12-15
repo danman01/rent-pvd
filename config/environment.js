@@ -3,10 +3,11 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-quickstart',
+    modulePrefix: 'rent-pvd',
     environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: 'http://localhost:3000/',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -45,6 +46,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+      ENV.rootURL = 'rent-pvd';
+      ENV.locationType = 'hash';
+      ENV.apiHost = '<% replace with the URL to your deployed API %>';
   }
 
   return ENV;

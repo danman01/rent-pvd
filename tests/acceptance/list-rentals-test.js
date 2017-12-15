@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'ember-quickstart/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'rent-pvd/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | list rentals');
 
