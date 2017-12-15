@@ -1,0 +1,9 @@
+<h2>List of Rentals</h2>
+
+<ul>
+  {{#each model as |rental|}}
+    <li>{{rental.address}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
