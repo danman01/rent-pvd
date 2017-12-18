@@ -1,14 +1,9 @@
-{{navbar-auth signOut="signOut"}}
-<h1>Welcome!</h1>
-{{#link-to 'list-rentals' class='button'}}List Rentals
-{{/link-to}}
-{{#link-to 'scientists' class='button'}}People Tracker
-{{/link-to}}
-{{#link-to 'about' class='button'}}About
-{{/link-to}}
-{{#link-to 'contact' class='button'}}Contact
-{{/link-to}}
-{{#link-to 'rentals' class='button'}}
-  View Rentals
-{{/link-to}}
-{{outlet}}
+{{navbar-header}}
+
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+<div class="col-md-8 col-md-offset-2">
+  {{outlet}}
+</div>

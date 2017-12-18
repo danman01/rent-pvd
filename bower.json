@@ -1,7 +1,6 @@
 {
   "name": "rent-pvd",
   "dependencies": {
-    "ember": "~2.10.1",
     "ember-qunit-notifications": "0.1.0",
     "bootstrap-sass": "^3.3.7"
   }

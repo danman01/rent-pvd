@@ -1,2 +1,22 @@
-{{hamburger-menu}}
-{{#link-to "application" class="navbar-brand"}}Home{{/link-to}}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    {{hamburger-menu}}
+    {{#link-to "application" class="navbar-brand"}}Home{{/link-to}}
+    {{#link-to 'list-rentals' class='button'}}List Rentals
+    {{/link-to}}
+    {{#link-to 'scientists' class='button'}}People Tracker
+    {{/link-to}}
+    {{#link-to 'about' class='button'}}About
+    {{/link-to}}
+    {{#link-to 'contact' class='button'}}Contact
+    {{/link-to}}
+    {{#link-to 'rentals' class='button'}}
+    View Rentals
+    {{/link-to}}
+
+    {{navbar-auth signOut="signOut"}}
+  </div>
+</nav>
+
+
