@@ -2,7 +2,7 @@
   "name": "rent-pvd",
   "version": "0.0.0",
   "private": true,
-  "description": "listings for rent pvd",
+  "description": "application for listing pvd rentals",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -16,6 +16,7 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "active-model-adapter": "^2.1.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.17.0",
@@ -23,6 +24,7 @@
     "ember-cli-babel": "^6.6.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
+    "ember-cli-flash": "^1.4.0",
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
@@ -31,12 +33,22 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~2.17.0",
+    "ember-debug-logger": "^1.0.0",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
+    "ember-local-storage": "^1.4.1",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.17.0",
     "ember-welcome-page": "^3.0.0",
-    "loader.js": "^4.2.3"
+    "grunt": "^1.0.1",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-jscs": "^3.0.1",
+    "grunt-jsonlint": "^1.1.0",
+    "grunt-shell": "^2.1.0",
+    "load-grunt-config": "^0.19.2",
+    "loader.js": "^4.2.3",
+    "time-grunt": "^1.4.0"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"

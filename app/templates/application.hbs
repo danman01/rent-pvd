@@ -1,9 +1,9 @@
-<h1>Welcome!</h1>
-<a href="/list-rentals">List Rentals</a>
-<a href="/scientists">People Tracker</a>
-<a href="/about">About</a>
-<a href="/contat">Contact</a>
-{{#link-to 'rentals' class='button'}}
-  View Rentals
-{{/link-to}}
-{{outlet}}
+{{navbar-header}}
+
+{{#each flashMessages.queue as |flash|}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+<div class="col-md-8 col-md-offset-2">
+  {{outlet}}
+</div>

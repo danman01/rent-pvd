@@ -10,5 +10,15 @@ const App = Application.extend({
 });
 
 loadInitializers(App, config.modulePrefix);
+Ember.onerror = function(error) {
+  debugger
+  Ember.$.ajax('/error-notification', {
+    type: 'POST',
+    data: {
+      stack: error.stack,
+      otherInformation: 'exception message'
+    }
+  });
+}
 
 export default App;
