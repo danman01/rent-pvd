@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'ember-quickstart',
+    modulePrefix: 'rent-pvd',
     environment,
     rootURL: '/',
     locationType: 'auto',
