@@ -1,9 +1,13 @@
-{{navbar signOut="signOut"}}
+{{navbar-auth signOut="signOut"}}
 <h1>Welcome!</h1>
-<a href="/list-rentals">List Rentals</a>
-<a href="/scientists">People Tracker</a>
-<a href="/about">About</a>
-<a href="/contat">Contact</a>
+{{#link-to 'list-rentals' class='button'}}List Rentals
+{{/link-to}}
+{{#link-to 'scientists' class='button'}}People Tracker
+{{/link-to}}
+{{#link-to 'about' class='button'}}About
+{{/link-to}}
+{{#link-to 'contact' class='button'}}Contact
+{{/link-to}}
 {{#link-to 'rentals' class='button'}}
   View Rentals
 {{/link-to}}
