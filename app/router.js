@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('change-password');
   this.route('users');
   this.route('scientists');
+  this.route('landlords');
   this.route('about');
   this.route('list-rentals');
   this.route('contact');
