@@ -52,9 +52,7 @@ module.exports = function(environment) {
     ENV.locationType = 'hash';
     ENV.rootURL = '/rent-pvd/';
     // here you can enable a production-specific feature
-      ENV.rootURL = 'rent-pvd';
-      ENV.locationType = 'hash';
-      ENV.apiHost = '<% replace with the URL to your deployed API %>';
+    ENV.apiHost = 'https://rent-pvd.herokuapp.com/';
   }
 
   return ENV;
