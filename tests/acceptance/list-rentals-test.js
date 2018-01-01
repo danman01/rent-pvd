@@ -14,9 +14,12 @@ moduleForAcceptance('Acceptance | list rentals');
 //test('should link to contact information', function (assert) {
 //
 //})
-//test('should list available rentals', function (assert) {
-//
-//})
+test('should list available rentals', function (assert) {
+  visit('/')
+  andThen(function() {
+    assert.equal(find('.listing').length, 3, 'should see 3 listings')
+  })
+})
 //test('should filter the list of rentals by city', function (assert) {
 //
 //})
@@ -24,11 +27,31 @@ moduleForAcceptance('Acceptance | list rentals');
 //
 //})
 
+test('should show rentals as the home page', function (assert) {
+  visit('/');
+  andThen(function() {
+    assert.equal(currentURL(), '/rentals', 'should redirect automatically');
+  });
+});
 
+test('should link to info about the company', function (assert) {
+  visit('/')
+  click('a:contains("About")')
+  andThen(function() {
+    assert.equal(currentURL(), '/about', 'ashould navigate to about route')
+  })
+})
+test('should link to contact information', function (assert) {
+  visit('/');
+  click('a:contains("Contact")');
+  andThen(function() {
+    assert.equal(currentURL(), '/contact', 'should navigate to contact');
+  });
+});
 test('visiting /list-rentals', function(assert) {
   visit('/list-rentals');
 
   andThen(function() {
-    assert.equal(currentURL(), '/list-rentals');
+    assert.equal(currentURL(), '/list-rentals', 'should route to list-rentals');
   });
 });
