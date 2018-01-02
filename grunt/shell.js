@@ -29,6 +29,9 @@ module.exports = {
   'deploy-prepare4': {
     command: 'ember build --environment=production'
   },
+  'deploy-custom-domain': {
+    command: 'touch dist/CNAME && echo www.rentprovidenceri.com >> dist/CNAME'
+  },
   'deploy-dist1': {
     command: 'git add --force dist/'
   },
