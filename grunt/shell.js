@@ -1,5 +1,6 @@
 'use strict'
 
+const customDomain = 'www.rentprovidenceri.com'
 const ghPagesList = ['dist/']
 
 module.exports = {
@@ -30,7 +31,7 @@ module.exports = {
     command: 'ember build --environment=production'
   },
   'deploy-custom-domain': {
-    command: 'touch dist/CNAME && echo www.rentprovidenceri.com >> dist/CNAME'
+    command: 'touch dist/CNAME && echo ' + customDomain + ' >> dist/CNAME'
   },
   'deploy-dist1': {
     command: 'git add --force dist/'
